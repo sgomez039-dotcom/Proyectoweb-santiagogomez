@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Santiago Gomez</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,3 +12,112 @@
     <h1>Proyecto Web - Santiago Gómez</h1>
 </body>
 </html>
+=======
+    <title>The Seven Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="img/Logo2.jpg" alt="Logo Brutal Grill" />
+        <span>The Seven Tables</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#promos">Promociones</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a class="nav-button btn-dona" href="#reservar">Reservar</a></li>
+        </ul>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+<!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, Si no quiero video, pendiente cambiarla -->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+<!--estos son los botones que estan dentro del video-->
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Dona</a>
+          <a class="btn outline" href="#voluntariado">Talleres</a>
+        </div>
+
+        <!-- Esta tarjeta es para colocar estadistica y la clase de star es para colocar-->
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+1,000,000</div>
+            <div class="stat-label">Socios</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+12.000</div>
+            <div class="stat-label">Trabajadores capacitados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+300</div>
+            <div class="stat-label">Convenios</div>
+          </div>
+        </div>
+      </div>
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+<!-- AQUI HAY TRES TARJETAS PARA DESTACAR PROYECTOS, VENTAS, PRODUCTOS, SERVICIOS-->
+
+    <section id="proyectos" class="projects container">
+      <h2>Proyectos en el Mundo</h2>
+      <p class="lead">
+        En esta empresa restaurantera brindamos los mejores platilloes del mundo, con los mejores abores y presentaciones, además somos una incabudora y aceleradora de pequeños restaurantes que apenás empiezan a ser rentables, les damos un acompañamiento eficiente para lograr alcanzar sus objetivos en la insdutria de la cocina internacional
+        
+</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Emprendimiento y negocios </h3>
+          </p>
+A partir del análisis y diagnostico de la rentabilidad de tu restaurante, hacemos un balance general y un balance de resulatados, para de esa manera dar un mejor servico con una proyección real y muy rentable, de esta manera tu restaurante se volvería muy conocido y muy bueno  
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Curso completo de artes culinarias premium</h3>
+            <p>Nosotros brindamos las mejores consultorias y cursos de cocina internacional como nadie más lo hace</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Impulso Gastronómico</h3>
+            <p>Centros de aprendizaje de cocina internacinal infundida por los mejores cocineros del planeta, aumentando la plusvlia en tu restaurante, además de ofrecer un reconocimiento Michelin por haber cursado estos cursos</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No hay nadie mejor haciendo esto!</h2>
+          <p>Suscríbete para recibir noticias e historias.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+>>>>>>> 3d43473 (update 4, entregable 3, tarjetas ok)

@@ -1,4 +1,250 @@
+<<<<<<< HEAD
 /* Estilos del proyecto */
 body {
     font-family: Arial, sans-serif;
+}
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #1a1a1a; /* Fondo oscuro elegante estilo parrilla */
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ff9900; /* Línea dorada/naranja inferior */
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #ffffff; /* Texto del logo en blanco */
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.main-nav .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ff9900; /* Efecto naranja al pasar el mouse */
+}
+
+.nav-button.btn-dona {
+    background-color: #ff9900; /* Botón naranja fuego */
+    color: #1a1a1a !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-button.btn-dona:hover {
+    background-color: #e68a00;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #ff9900, #ffb380);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 107, 60, 0.3);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Stats */
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.stat {
+  flex: 0 1 140px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #f1f5f9;
+  opacity: 0.95;
+}
+
+/* Projects */
+.projects {
+  padding:3rem 0;
+}
+
+.lead {
+  color:#666;
+}
+
+.project-cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.card {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  overflow:hidden;
+  transition:transform .2s;
+}
+
+.card:hover {
+  transform:translateY(-4px);
+}
+
+.card-img {
+  height:180px; /* Le subí un poco la altura para que la imagen luzca mejor */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#000000;
+  font-weight:600;
+}
+
+.card-body {
+  padding:1rem;
+}
+
+.card-body h3 {
+  margin:0 0 0.4rem;
+}
+
+.card-body p {
+  color:#666;
+  margin:0;
+}
+
+/* IMÁGENES CORTADAS DE TUS TARJETAS */
+#antioquia-caucasia {
+  background-image: url("img/negocios1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#guajira {
+  background-image: url("img/negocios 2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#cordoba {
+  background-image: url("img/negocios 3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Newsletter */
+.newsletter {
+  padding:2rem 0;
+  background:linear-gradient(90deg, #1a1a1a 0%, #333 100%);
+  color:#fff;
+}
+
+.newsletter-inner {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+}
+
+.subscribe-form {
+  display:flex;
+  gap:0.5rem;
+}
+
+.subscribe-form input {
+  padding:0.6rem 0.8rem;
+  border-radius:8px;
+  border:none;
+  outline:none;
+}
+
+.form-message {
+    margin-top:0.6rem;
 }
