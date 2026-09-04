@@ -3,18 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Santiago Gomez</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <h1>Proyecto Web - Santiago Gómez</h1>
-</body>
-</html>
-=======
     <title>The Seven Tables</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -36,69 +27,91 @@
       <button id="menuToggle" class="menu-toggle">☰</button>
     </div>
   </header>
-<!-- AQUÍ INICIA EL MAIN   -->
+
+<!-- AQUÍ INICIA EL MAIN -->
   <main>
-    <!-- HERO con video, Si no quiero video, pendiente cambiarla -->
+    <!-- HERO con video -->
     <section class="hero video-hero">
       <video class="hero-video" id="heroVideo" autoplay loop playsinline>
         <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
-<!--estos son los botones que estan dentro del video-->
       <div class="hero-content container">
         <div class="hero-actions">
           <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Dona</a>
           <a class="btn outline" href="#voluntariado">Talleres</a>
         </div>
 
-        <!-- Esta tarjeta es para colocar estadistica y la clase de star es para colocar-->
         <div class="stats-grid">
           <div class="stat">
-            <div class="stat-number">+1,000,000</div>
-            <div class="stat-label">Socios</div>
+            <div class="stat-number">%15</div>
+            <div class="stat-label">Descuento en reservaciones</div>
           </div>
           <div class="stat">
-            <div class="stat-number">+12.000</div>
-            <div class="stat-label">Trabajadores capacitados</div>
+            <div class="stat-number">+120,000</div>
+            <div class="stat-label">Clientes satisfechos</div>
           </div>
           <div class="stat">
-            <div class="stat-number">+300</div>
-            <div class="stat-label">Convenios</div>
+            <div class="stat-number">+1,500</div>
+            <div class="stat-label">Eventos atendidos</div>
           </div>
         </div>
+    </section> <!Fin y cierra las estadistcias
+
+    <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS -->
+    <section id="lanzamientos" class="carousel-section container">
+      <h2>Nuevos Lanzamientos</h2>
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="img/lanzamiento1.jpg" alt="Consultorías Gastronómicas">
+            <p class="carousel-caption">Consultorías</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/lanzamiento2.jpg" alt="Talleres de Cocina">
+            <p class="carousel-caption">Talleres</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/lanzamiento3.jpg" alt="Asesorías Gourmet">
+            <p class="carousel-caption">Asesorías</p>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
-    </section> <!--Fin hero y cierra las estadísticas y todo-->
+    </section>
+    <!-- FIN CARRUSEL -->
 
-<!-- AQUI HAY TRES TARJETAS PARA DESTACAR PROYECTOS, VENTAS, PRODUCTOS, SERVICIOS-->
-
+    <!-- TARJETAS DE PROYECTOS -->
     <section id="proyectos" class="projects container">
       <h2>Proyectos en el Mundo</h2>
       <p class="lead">
-        En esta empresa restaurantera brindamos los mejores platilloes del mundo, con los mejores abores y presentaciones, además somos una incabudora y aceleradora de pequeños restaurantes que apenás empiezan a ser rentables, les damos un acompañamiento eficiente para lograr alcanzar sus objetivos en la insdutria de la cocina internacional
-        
-</p>
+        En esta empresa restaurantera brindamos los mejores platillos del mundo, con los mejores sabores y presentaciones, además somos una incubadora y aceleradora de pequeños restaurantes que apenas empiezan a ser rentables, les damos un acompañamiento eficiente para lograr alcanzar sus objetivos en la industria de la cocina internacional.
+      </p>
 
       <div class="project-cards">
         <article class="card">
           <div class="card-img" id="antioquia-caucasia"></div>
           <div class="card-body">
-            <h3>Emprendimiento y negocios </h3>
-          </p>
-A partir del análisis y diagnostico de la rentabilidad de tu restaurante, hacemos un balance general y un balance de resulatados, para de esa manera dar un mejor servico con una proyección real y muy rentable, de esta manera tu restaurante se volvería muy conocido y muy bueno  
+            <h3>Emprendimiento y negocios</h3>
+            <p>A partir del análisis y diagnóstico de la rentabilidad de tu restaurante, hacemos un balance general y un balance de resultados, para de esa manera dar un mejor servicio con una proyección real y muy rentable.</p>
           </div>
         </article>
         <article class="card">
           <div class="card-img" id="guajira"></div>
           <div class="card-body">
             <h3>Curso completo de artes culinarias premium</h3>
-            <p>Nosotros brindamos las mejores consultorias y cursos de cocina internacional como nadie más lo hace</p>
+            <p>Nosotros brindamos las mejores consultorías y cursos de cocina internacional como nadie más lo hace.</p>
           </div>
         </article>
         <article class="card">
           <div class="card-img" id="cordoba"></div>
           <div class="card-body">
             <h3>Impulso Gastronómico</h3>
-            <p>Centros de aprendizaje de cocina internacinal infundida por los mejores cocineros del planeta, aumentando la plusvlia en tu restaurante, además de ofrecer un reconocimiento Michelin por haber cursado estos cursos</p>
+            <p>Centros de aprendizaje de cocina internacional impartidos por los mejores cocineros del planeta, aumentando la plusvalía en tu restaurante.</p>
           </div>
         </article>
       </div>
@@ -118,6 +131,24 @@ A partir del análisis y diagnostico de la rentabilidad de tu restaurante, hacem
       </div>
     </section>
   </main>
+
+  <!-- FOOTER CON REDES SOCIALES -->
+  <footer class="footer">
+    <div class="container" style="text-align: center; padding: 2rem 0;">
+      <div class="social-links">
+        <a href="https://www.instagram.com/santiago_gv25?igsi=OHh1OTZ1d3RneGJ1" target="_blank" rel="noopener noreferrer" style="color: inherit; font-size: 2rem; margin: 0 10px;">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" style="color: inherit; font-size: 2rem; margin: 0 10px;">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" style="color: inherit; font-size: 2rem; margin: 0 10px;">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+      <p style="margin-top: 1rem;">&copy; 2026 The Seven Tables. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
->>>>>>> 3d43473 (update 4, entregable 3, tarjetas ok)
